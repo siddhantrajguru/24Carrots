@@ -1,0 +1,416 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:"futura-pt", sans-serif;
+    box-sizing: border-box;
+}
+.home{
+    height: 100vh;
+    width: 100%;
+} 
+span{
+    color: black;
+}   
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 5%;
+    padding-right: 9%;
+    padding-bottom: 3%;
+    background-color: #fff;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 39px;
+}
+nav ul li a{
+    color: #1A4122;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: #C15627;
+    transition: 0.3s;
+}
+.btn{
+    background-color: #C15627;
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.btn:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 5PX #ff6f00);
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media(min-aspect-rati:16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(min-aspect-rati:16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+<!----about--->
+.main{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    background-color: #fff;
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+}
+.about img{
+    height: auto;
+    width: 380px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2{
+    text-align: center;
+    color: #1A4122;
+    font-size: 99px;
+    font-style: normal;
+    margin-bottom: 20px;
+    font-family: "F37 Caslon", serif;
+    font-weight: 400;
+    line-height: 92%;
+    letter-spacing: -3px;
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+.about-text h3{
+    text-align: center;
+    color: #647b4e;
+    font-family: "Rustica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    line-height: 100%;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.about-text p{
+    color: #1A4122;
+    max-width: 490px;
+    margin: 30px auto 35px;
+    letter-spacing: 0.20px;
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 105px;
+    font-weight: 300;
+    font-style: normal;
+}
+button{
+    position: relative;
+    background-color:#C15627;   
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 0.4s;
+    cursor: pointer;
+    text-align: center;
+}
+button:hover{
+    filter: drop-shadow(0 0 5PX #ff6f00);
+}
+
+
+.main{
+position: relative;
+}
+.main .wrapper{
+    width: 30vw;
+    height: 75vh;
+    margin: 5rem auto;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.main.wrapper-holder{
+    display: grid;
+    grid-template-columns: repeat(4,100%);
+    height: 100%;
+    width: 100%;
+}
+
+
+.section-example {
+    background-color: #fff;
+    padding: 50px 0;
+}
+.section-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section-image { 
+    width: 450px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 5px;
+    border-radius: 230px 230px 0 0;
+}
+.section-content {
+    max-width: 500px;
+    text-align: left;
+}
+  
+.section-title {
+    display: block;
+    text-align: center;
+    font-family: "F37 Caslon", serif;
+    color: #1A4122;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4.5rem;
+    letter-spacing: -3px;
+    margin-top: 0px;
+    margin-bottom: 24px;
+    text-align: left;
+}
+h3{
+    color: #1A4122;
+    text-transform: uppercase;
+    font-family: "futura-pt", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.section-description {
+    color: #1A4122;
+    font-family: "futura-pt", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    letter-spacing: 0.13rem;
+}
+.section-button {
+    display: inline-block;
+    background-color: #C15627;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.section-button:hover {
+    background-color: #C15627;
+    filter: drop-shadow(0 0 5PX #ff6f00);
+}
+
+
+.image-section {
+    position: relative;
+    overflow: hidden;
+}
+.image-section img {
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+}
+.image-section-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 2rem;
+    box-sizing: border-box;
+} 
+.half-circle{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 345px 345px 0 0;
+    background-color: #fff;
+    display: block;
+    z-index: 23344;
+    height: 316px;
+    width: 643px;
+    bottom: -292px;
+}
+.circle-content{
+    position: relative;
+    z-index: 2;
+    margin: -50px auto 0;
+    max-width: 620px;
+}    
+.venues{
+    color: #1A4122;
+    text-align: center;
+    font-family:"Rustica", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.section-title{
+    color: #1A4122;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 92%;
+    letter-spacing: -3px;
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+.section-subtitle{
+    font: size 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    letter-spacing: 0,16px;
+    color: #1A4122;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.venue-section button {
+    margin-top: 2em;
+    background-color: #f26522;
+    color: #fff;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;  
+}
+.venue-section button:hover {
+    background-color: #e55a1f;
+}
+.mission-statement {
+    background-color: #ffff;
+    padding: 80px 0;
+    text-align: center;
+}
+.mission-statement h2 {
+    max-width: 620px;
+    text-align: center;
+    margin: 0px auto 30px;
+    color: #1A4122;
+    text-align: center;
+    font-family: "F37 Caslon", serif;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 92%;
+    margin-top: 0px;
+    margin-bottom: 30px;
+} 
+.mission-statement p {
+    color: #1A4122;
+    margin: 0px auto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    max-width: 1500px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    letter-spacing: 0.16px;
+    margin-bottom: 1.5rem;
+    font-family: "futura-pt", sans-serif;
+}
+.video{
+    margin: 150px;
+    margin-top: 5%;
+}
+
+.catering {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.catering-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.catering h2 {
+    max-width: 780px;
+    text-align: center;
+    margin: 0px auto 30px;
+    color: #1A4122;
+    font-family: "F37 Caslon", serif;
+    margin-bottom: 24px;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 92%;
+}
+.catering p {
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    margin-bottom: 35px;
+    font-size: 20px;
+    letter-spacing: 0.16px;
+}
+p{
+    margin-bottom: 1.5rem;
+}  
+.button {
+    padding: 8px 30px;
+    background-color:#e55a1f;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 32px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color:#e55a1f;
+    filter: drop-shadow(0 0 5PX #ff6f00);
+}
